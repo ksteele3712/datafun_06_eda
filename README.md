@@ -50,7 +50,7 @@ git push
 	- Choose your `.venv` environment to ensure all dependencies are available for your analysis.
   
 
-## 8. Importing Data Files
+## 📂 Importing Data Files
 
 This project uses three main datasets:
 
@@ -66,7 +66,18 @@ To organize these files, we first created a `data` folder inside our `datafun_06
 
 This structure keeps our data organized and makes it easy to load each file in our analysis notebooks using pandas.
 
-### Inspecting and Summarizing Data
+## 🥗 Chosen Dataset: Nutrition Values
+
+For this project, I have chosen to work with the **Nutrition Values** dataset because nutrition is important to me. This dataset contains nutritional information for a variety of foods, including calories, carbohydrates, protein, fat, fiber, vitamins, and minerals.
+
+**Dataset Description:**
+The Nutrition Values dataset provides detailed nutritional data for many foods, which can be used to analyze dietary patterns, compare nutrients, and visualize nutrition trends.
+
+**Local File:** [`data/nutrition_values.csv`](data/nutrition_values.csv)
+
+**Source:** [Kaggle Nutrition Values Dataset](https://www.kaggle.com/datasets)
+
+### 📊 Inspecting and Summarizing Data
 
 After importing the data files, we used pandas commands to inspect and summarize our datasets:
 
