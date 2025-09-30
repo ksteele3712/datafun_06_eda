@@ -1,6 +1,7 @@
 
-# datafun_06_eda
-Performing and publishing a custom EDA project to demonstrate skills with Jupyter, pandas, Seaborn and popular tools for data analytics. The notebook tells a data story and visually presents findings in a clear and engaging manner.
+## datafun_06_eda 🍎🥦
+In this project, I will analyze 77 different kinds of fruits and vegetables. We will see their nutrition values from a CSV file using Jupyter Notebook, pandas, seaborn, and other popular data analytics tools. The analysis will include visualizations and graphs to compare nutrients and highlight key findings. The notebook will tell a data story and present results in a clear and engaging way.
+
 
 ## 📁 Project File Structure
 
