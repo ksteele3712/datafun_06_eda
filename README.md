@@ -1,4 +1,3 @@
-
 ## datafun_06_eda 🍎🥦
 In this project, I will analyze 77 different kinds of fruits and vegetables. We will see their nutrition values from a CSV file using Jupyter Notebook, pandas, seaborn, and other popular data analytics tools. The analysis will include visualizations and graphs to compare nutrients and highlight key findings. The notebook will tell a data story and present results in a clear and engaging way.
 
@@ -105,6 +104,63 @@ print(df.describe())    # Show summary statistics for each column
 ```
 
 These commands helped us understand the structure and key statistics of our nutrition, fruit, and vegetable data before further analysis.
+
+## 📈 Summary of Graphs Used in EDA Notebook
+
+Below are all the graph types used in `kristinesteele_eda.ipynb` with copiable code snippets for each:
+
+### 1. Histogram
+Shows the distribution of a single variable (e.g., calories).
+```python
+import matplotlib.pyplot as plt
+plt.hist(df['calories'], bins=20)
+plt.xlabel('Calories')
+plt.ylabel('Frequency')
+plt.title('Distribution of Calories')
+plt.show()
+```
+
+### 2. Scatter Plot
+Visualizes the relationship between two variables (e.g., calories vs. protein).
+```python
+plt.scatter(df['calories'], df['protein'])
+plt.xlabel('Calories')
+plt.ylabel('Protein')
+plt.title('Calories vs. Protein')
+plt.show()
+```
+
+### 3. Box Plot
+Shows the spread and outliers for a variable (e.g., fiber).
+```python
+plt.boxplot(df['fiber'])
+plt.ylabel('Fiber')
+plt.title('Boxplot of Fiber')
+plt.show()
+```
+
+### 4. Heatmap
+Displays correlation between variables.
+```python
+import seaborn as sns
+corr = df.corr()
+sns.heatmap(corr, annot=True, cmap='coolwarm')
+plt.title('Correlation Heatmap')
+plt.show()
+```
+
+### 5. Pie Chart
+Shows proportions of categories (e.g., fruit types).
+```python
+labels = df['type'].value_counts().index
+sizes = df['type'].value_counts().values
+plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+plt.title('Distribution of Fruit Types')
+plt.show()
+```
+
+---
+*Copy and paste these code snippets into your notebook to reproduce each graph type used in the analysis.*
 
 
 
